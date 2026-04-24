@@ -64,3 +64,58 @@ while(usernum!=gamenum){
     prompt("you entered wrong number.guess again:");
 }
 console.log("congratulation you win");
+
+//STRING IN JAVASCRIPT
+//CREATE STRING
+let str1="apnacollege";
+//or 
+let str2='apnacollege';
+console.log(str1,str2);
+
+//STRING LENGTH
+let str3="satyajit";
+console.log(str3.length);
+
+//STRING INDICES
+console.log(str2[0]);
+
+//TEMPLETE LITERALS(VERY IMPORTANT TO UNDERSTAND)
+let obj={
+    items:"pen",
+    price:10
+};
+let output=`the cost of the ${obj.items} is ${obj.price}.`;
+console.log(output);
+
+//ESCAPE CHARACTER(\n)
+console.log("apna \n college");
+
+//TAB SPACE(\t)
+console.log("apna \t college");
+
+//STRING METHODS IN JAVA SCRIPT(SOME METHODS ARE SHOW)
+//1.str.toUpperCase
+console.log(str1.toUpperCase());
+//2.str.toLowerCase
+console.log(str3.toLowerCase());
+//3.str.trim()
+console.log(str2.trim());
+//4.str.slice(start,end)
+console.log(str1.slice(1,5));
+//5.str1.concact(str2)
+console.log(str1.concat(str2));
+//6.str.replace(searchval,newval)
+console.log(str1.replace("ap","i"));
+//7.str.charAt(idx)
+let str4="i love js";
+console.log(str4.charAt(3));
+
+//QUESTION PRACTICE
+//🟢QUESTION:
+//PROMPT THE USER TO ENTER THEIR FULL NAME.
+//GENERATE A USERNAME FOR THEM BASED ON THE INPUT START USERNAME WITH @, 
+//FOLLOWED BY THEIR FULLNAME AND AND ENDING WITH THE FULLNAME LENGTH.
+let fullname = prompt("enter your fullname without space");
+let username = "@" + fullname + fullname.length;
+console.log(username);
+
